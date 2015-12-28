@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<!-- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> -->
+	<title> CSS url list </title>
+	<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<!-- begin style -->
+<style type="text/css">
+body{color:#666;background:#fff;}
+h1,h3,p{text-indent:20px;}
+h1,h3{font-size:14px;height:24px;line-height:24px;}
+p{font-size:12px;height:22px;line-height:22px;}
+.back{height:22px;line-height:22px;font-size:12px;position:absolute;right:10px;top:10px;}
+</style>
+<!-- end style -->
+
+</head>
+<!-- end head -->
+
+<!-- begin body -->
+<body>
+
+<a href="../index.html" class="back">../</a>
+<h1>qiaqia</h1>
+<div class="section">
+	<h3>韦秋娥</h3>
+	<p><a href="html/recommend-hd.html">推荐页-高清</a></p>
+	<p><a href="html/recommend-hd.html" name="html/recommend.html">推荐页</a></p>
+	<p><a href="html/recommend.html">推荐页-标清</a></p>
+</div>
+
+<!-- <script type="text/javascript" src="../static/public/js/browserTools.js"></script> -->
+<!-- <script type="text/javascript" src="../static/public/js/public.js"></script> -->
+<script type="text/javascript" src="../public/js/public.js"></script>
+</body>
+<!-- end body -->
+
+</html>
+<!-- end html -->

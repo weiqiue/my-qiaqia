@@ -1,0 +1,207 @@
+body{
+	/*overflow: hidden;*/
+	margin: 0;
+}
+a{
+	outline: 0;
+	border:0;
+}
+.recommend-container{
+	position: absolute;
+    top: 0;
+    left: 0;
+	background: url(../images-hd/images/background.jpg) no-repeat;
+	width: 1280px;
+	height:720px;
+}
+.clearfix:before ,.clearfix:after{  
+    content: "";
+    display: block;
+    clear: both;
+}  
+.header{
+	position: absolute;
+	left: 70px;
+	top: 20px;
+}
+.header .nav0{
+	background: url(../images-hd/images/nav0.png) no-repeat;
+	width: 85px;
+}
+.header .nav1{
+	
+	background: url(../images-hd/images/nav1.png) no-repeat;
+	width: 200px;
+}
+.header .nav2{
+	
+	background: url(../images-hd/images/nav2.png) no-repeat;
+	width: 205px;
+}
+.header .nav3{
+	
+	background: url(../images-hd/images/nav3.png) no-repeat;
+	width: 205px;
+}
+.header .nav0 ,.nav1,.nav2,.nav3{
+    position: relative;
+    display: inline-block;
+    height: 104px;
+    margin-right: 15px;
+    margin-left: 15px;
+    float: left;
+}
+.header .nav0.focus {
+	background: url(../images-hd/images/focus-nav0.png) no-repeat;
+}
+.header .nav1.focus{
+	background: url(../images-hd/images/focus-nav1.png) no-repeat;
+}
+.header .nav2.focus{
+	background: url(../images-hd/images/focus-nav2.png) no-repeat;
+}
+.header .nav3.focus{
+	background: url(../images-hd/images/focus-nav3.png) no-repeat;
+}
+.recommend-content{
+	position: absolute;
+    top: 154px;
+    left: 85px;
+}
+.recommend-left a {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+}
+.recommend-left a img{
+ margin-left: 9px;
+ margin-top: 10px;
+}
+.recommend-left a:focus:before{
+	content: "";
+	position: absolute;
+	top:0px;
+	width: 278px;
+	height: 427px;
+	z-index: 9;
+	background: url(../images-hd/images/left_border.png) center center no-repeat;
+}
+ .recommend-right .right1:focus:before{
+ 	content: "";
+	position: absolute;
+	width: 552px;
+	height: 212px;
+	z-index: 9;
+	left: 0px;
+	background: url(../images-hd/images/right_border1.png)no-repeat;
+ }
+ .recommend-right {
+ 	position: absolute;
+ 	top:0;
+ 	left: 275px;
+ }
+ .recommend-right .right1{
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.recommend-right .right1 img{
+    margin-left: 10px;
+    margin-top: 9px;
+}
+.recommend-right .right2{
+	position: absolute;
+	top:0;
+	left: 552px;
+}
+.recommend-right .right2:focus:before{
+ 	content: "";
+	position: absolute;
+	width: 276px;
+	height: 213px;
+	z-index: 9;
+	left:0;
+	background: url(../images-hd/images/right_border2.png)no-repeat;
+ }
+.recommend-right .right2 img{
+    margin-top: 11px;
+    margin-left: 9px;
+}
+.recommend-list{
+	position: absolute;
+	left: 0;
+	top: 210px;
+	width: 830px;
+}
+ .recommend-list .list{
+    position: relative;
+    margin: 9px;
+    float: left;
+ }
+ .recommend-list .list:focus:before{
+ 	content: "";
+    position: absolute;
+    top: -11px;
+    left: -9px;
+    width: 276px;
+    height: 213px;
+    z-index: 1;
+	background: url(../images-hd/images/right_border2.png)no-repeat;
+ }
+ .footer{
+ 	position: absolute;
+    top: 625px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+}
+ .footer0,.footer1{
+	position: relative;
+	display: inline-block;
+	margin: 0 19px;
+ 	width: 60px;
+ 	height:60px;
+ }
+ .footer0{
+ 	background: url(../images-hd/images/home-hd.png)no-repeat;
+ }
+ .footer1{
+ 	background: url(../images-hd/images/index-hd.png)no-repeat;
+ }
+ .footer0.focus{
+ 	background: url(../images-hd/images/focus-home-hd.png)no-repeat;
+ }
+ .footer1.focus{
+ 	background: url(../images-hd/images/focus-index-hd.png)no-repeat;
+ }
+ .logo{
+ 	position: absolute;
+ 	top:-6px;
+ 	left: 949px;
+ 	width: 220px;
+ 	height: 80px;
+ 	background: url(../images-hd/images/logo-hd.png);
+ }
+ .con-header{
+    width: 725px;
+    left: 0;
+    position: absolute;
+ }
+ .con-header a{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 25%;
+ }
+ .con-footer{
+    position: absolute;
+    top: 625px;
+    left: 377px;
+    width: 520px;
+ }
+ .con-footer a{
+    display: inline-block;
+    width: 45%;
+    margin: 0 10px;
+ }
