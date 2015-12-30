@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/major.css">
+</head>
+<body>
+	<div class="major-container">
+		<span class="prev"></span>
+		<span class="next"></span>
+		 <div class="major-content">
+			<div class="major-list">
+				<a href="#" class="list"><img src="../images-hd/images/image5.jpg"></a>
+				<a href="#" class="list"><img src="../images-hd/images/image5.jpg"></a>
+				<a href="#" class="list"><img src="../images-hd/images/image5.jpg"></a>
+				<a href="#" class="list"><img src="../images-hd/images/image5.jpg"></a>
+			</div>
+			</div>		
+		</div>
+		<div class="footer">
+			<span class="footer0" id="footer0"></span>
+			<span class="footer1" id="footer1"></span>
+		</div> 
+	</div>
+	<div class="controller">
+		<div class="con-footer">
+			<a href="#"onfocus="addFocus('footer0');" onblur="addBlur('footer0','focus')"><img src="../images/dot.gif"></a>
+			<a href="#"onfocus="addFocus('footer1');" onblur="addBlur('footer1','focus')"><img src="../images/dot.gif"></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function addFocus(id){
+		var obj=document.getElementById(id);
+			obj.className+=' '+'focus';
+	}
+	function addBlur(id,cName){
+		var obj=document.getElementById(id);
+		if(hasClass(id,cName)){
+			obj.className=obj.className.replace(new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," ")
+		}
+	}
+	function hasClass(id,cName){
+		var obj=document.getElementById(id);
+			return !!obj.className.match(new RegExp("(\\s|^)"+cName+"(\\s|$)"))
+		}
+
+	</script>
+</body>
+</html>

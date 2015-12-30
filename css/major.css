@@ -1,0 +1,118 @@
+body{
+	/*overflow: hidden;*/
+	margin: 0;
+}
+a{
+	outline: 0;
+	border:0;
+}
+.major-container{
+	position: absolute;
+    top: 0;
+    left: 0;
+	background: url(../images-hd/images/bg1.jpg) no-repeat;
+	width: 1280px;
+	height:720px;
+}
+.prev{
+	position: absolute;
+	top: 454px;
+	left: 20px;
+	width: 70px;
+	height: 100px;
+	background: url(../images-hd/images/prev.png);
+}
+.next{
+	position: absolute;
+	top: 454px;
+	right: 20px;
+	width: 70px;
+	height: 100px;
+	background: url(../images-hd/images/next.png);
+}
+.major-content{
+	position: absolute;
+    top: 387px;
+    left: 88px;
+}
+.major-list {
+    position: relative;
+    display: inline;
+    width: 1104px;
+    height: 193px;
+    overflow: hidden;
+}
+.major-list .list{
+	position: relative;
+	height: 193px;
+	float: left;
+	margin: 0 10px;
+}
+ .major-list .list:focus:before{
+ 	content: "";
+    position: absolute;
+    top: -11px;
+    left: -9px;
+    width: 276px;
+    height: 213px;
+    z-index: 1;
+	background: url(../images-hd/images/right_border2.png)no-repeat;
+ }
+
+
+ .footer{
+ 	position: absolute;
+    top: 625px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+}
+ .footer0,.footer1{
+	position: relative;
+	display: inline-block;
+	margin: 0 19px;
+ 	width: 60px;
+ 	height:60px;
+ }
+ .footer0{
+ 	background: url(../images-hd/images/home-hd.png)no-repeat;
+ }
+ .footer1{
+ 	background: url(../images-hd/images/index-hd.png)no-repeat;
+ }
+ .footer0.focus{
+ 	background: url(../images-hd/images/focus-home-hd.png)no-repeat;
+ }
+ .footer1.focus{
+ 	background: url(../images-hd/images/focus-index-hd.png)no-repeat;
+ }
+ ./*logo{
+ 	position: absolute;
+ 	top:-6px;
+ 	left: 949px;
+ 	width: 220px;
+ 	height: 80px;
+ 	background: url(../images-hd/images/logo-hd.png);
+ }*/
+ .con-header{
+    width: 725px;
+    left: 0;
+    position: absolute;
+ }
+ .con-header a{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 25%;
+ }
+ .con-footer{
+    position: absolute;
+    top: 625px;
+    left: 377px;
+    width: 520px;
+ }
+ .con-footer a{
+    display: inline-block;
+    width: 45%;
+    margin: 0 10px;
+ }

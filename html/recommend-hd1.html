@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/recommend.css">
+	<script src="../js/template.js"></script>
+</head>
+<body>
+	<script type="text/html">
+		<div class="recommend-container">
+			<div class="header ">
+				{{each headers as v i}}
+				<span id="nav{{i}}"class="nav{{i}}"></span>{{/each}}
+				<span id="nav1"class="nav1"></span>
+				<span id="nav2"class="nav2"></span>
+				<span id="nav3"class="nav3"></span>
+			</div>
+			 <div class="recommend-content">
+				<div class="recommend-left">
+					<a href="#"><img src="../images-hd/images/image1.jpg"width="256" height="405"></a>
+				</div>
+				<div class="recommend-right">
+					<a href="#" class="right1"><img src="../images-hd/images/image2.jpg"></a>
+					<a href="#" class="right2"><img src="../images-hd/images/image3.jpg"></a>
+					<div class="recommend-list">
+						<a href="#" class="list"><img src="../images-hd/images/image3.jpg"></a>
+						<a href="#" class="list"><img src="../images-hd/images/image3.jpg"></a>
+						<a href="#" class="list"><img src="../images-hd/images/image3.jpg"></a>
+					</div>
+				</div>		
+			</div>
+			<div class="footer">
+				<span class="footer0" id="footer0"></span>
+				<span class="footer1" id="footer1"></span>
+				<span class="logo"></span>
+			</div> 
+		</div>
+		<div class="controller">
+			<div class="con-header">
+				<a href="#" onfocus="addFocus('nav0');" onblur="addBlur('nav0','focus')"><img src="../images/dot.gif"></a>
+				<a href="#" onfocus="addFocus('nav1') "onblur="addBlur('nav1','focus')"><img src="../images/dot.gif"></a>
+				<a href="#" onfocus="addFocus('nav2')"onblur="addBlur('nav2','focus')"><img src="../images/dot.gif"></a>
+				<a href="#" onfocus="addFocus('nav3')"onblur="addBlur('nav3','focus')"><img src="../images/dot.gif"></a>
+			</div>
+			<div class="con-footer">
+				<a href="#"onfocus="addFocus('footer0');" onblur="addBlur('footer0','focus')"><img src="../images/dot.gif"></a>
+				<a href="#"onfocus="addFocus('footer1');" onblur="addBlur('footer1','focus')"><img src="../images/dot.gif"></a>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript">
+	function addFocus(id){
+		var obj=document.getElementById(id);
+			obj.className+=' '+'focus';
+	}
+	function addBlur(id,cName){
+		var obj=document.getElementById(id);
+		if(hasClass(id,cName)){
+			obj.className=obj.className.replace(new RegExp( "(\\s|^)" + cName + "(\\s|$)" )," ")
+		}
+	}
+	function hasClass(id,cName){
+		var obj=document.getElementById(id);
+			return !!obj.className.match(new RegExp("(\\s|^)"+cName+"(\\s|$)"))
+		}
+
+	</script>
+</body>
+</html>
